@@ -1,0 +1,115 @@
+
+          <!-- Side Bar -->
+          <div class="col-md-4">
+            <div class="content-section">
+              <p class='text-muted'>Follow me on these platforms.
+                <ul class="list-group">
+                  <a href= 'https://github.com/Tzeyong' class="list-group-item list-group-item-light"> 
+                    <i  class="fab fa-github fa-2x mr-2 p-2 git-icon" aria-hidden="true"> </i> 
+                    Github </a>
+                  <a href= 'https://www.linkedin.com/in/charlesyew/' class="list-group-item list-group-item-light"> 
+                    <i  class="fab fa-linkedin fa-2x mr-2 p-2 link-icon" aria-hidden="true"> </i> 
+                    LinkedIn </a>
+                  <a href= 'https://github.com/Tzeyong' class="list-group-item list-group-item-light"> 
+                    <i  class="fab fa-twitter fa-2x mr-2 p-2 twit-icon" aria-hidden="true"> </i> 
+                    Twitter </a>
+                  <a href= 'https://www.facebook.com/tzeyongyew' class="list-group-item list-group-item-light"> 
+                    <i  class="fab fa-facebook fa-2x mr-2 p-2 fb-icon" aria-hidden="true"> </i>
+                    Facebook </a>
+                </ul  >
+              </p>
+            </div>
+          </div>
+        </div>
+		
+<!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->

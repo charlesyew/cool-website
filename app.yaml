@@ -1,0 +1,11 @@
+runtime: python39
+#entrypoint: gunicorn -b :8080 -w 2 main:app
+
+handlers:
+- url: /static
+  static_dir: script/static
+- url: /.*
+  script: auto
+  
+env_variables:  
+    GA_TRACKING_ID: UA-207145136-1
