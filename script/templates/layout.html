@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<! -- insert banner -->
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-207145136-1"></script>
+    <script>
+      if (document.location.hostname == "charlesyew.com") {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-207145136-1');
+      }
+    </script> 
+    
+    <!-- Title -->
+    {% if title %}
+      <title> Charles Yew - {{title}} </title>
+    {% else %}
+      <title> Charles Yew</title>
+    {% endif %}
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet"> 
+
+    <!-- Theme CSS -->  
+    <link rel="stylesheet"  href="{{ url_for('static', filename='main.css') }}">
+  
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- Navigation Header-->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+          <div class="container">
+            <a class="navbar-brand mr-4" href="/home">Charles Yew</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="{{url_for('resume')}}">
+                  <i  class="fas fa-list" aria-hidden="true"> </i> 
+                  Resume</a>
+                <a class="nav-item nav-link" href="{{url_for('blog')}}">
+                  <i  class="fas fa-pen-square" aria-hidden="true"> </i> 
+                  Blog</a>
+                <a class="nav-item nav-link" href="{{url_for('projects')}}">
+                <i  class="fas fa-file-archive" aria-hidden="true"> </i>
+                  Projects</a>
+                <a class="nav-item nav-link" href="{{url_for('contact')}}">
+                <i  class="fas fa-address-book" aria-hidden="true"> </i>
+                  Contact</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Main Frame-->
+      <main role="main" class="container-fluid">
+        <div class="row">
+          <!-- Content block -->
+          {% block content %}{% endblock %}
+        </div>
+      </main>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery.mousewheel.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='dropdown.js') }}"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+  </body>
+
+</body>
+
+
+<!-- Footer -->
+<footer class="bg-steel text-center text-offwhite mt-auto">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href= 'https://github.com/charlesyew' role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href = 'https://www.linkedin.com/in/charlesyew/'" role="button"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href= 'https://twitter.com/charles_yew' role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href= 'https://www.facebook.com/tzeyongyew'" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for my newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4 px-2">
+      <p>
+        I pen down my thoughts on interesting topics in risk and asset management regularly. If you find my content helpful, 
+        feel free to follow my newsletter and social media pages using the links above. 
+      </p>
+    </section>
+    <!-- Section: Text -->
+    
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3 bg-black" >
+    <p style="font-size:14px; line-height: 50%;">© 2021 Author: Tze Yong (Charles) Yew</p>
+    <p style="font-size:10px; line-height: 50%;">Powered by: Flask, Bootstrap, Vue.js & Google App Engine. </p>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->

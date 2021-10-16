@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class = "article-box shadow-lg my-5">
+    <article class="media content-section">
+        <div class="media-body">
+            <div class="article-metadata">
+            <a class="mr-2" >{{ project.author }}</a>
+            <small class="text-muted">{{ project.date_posted }}</small>
+            </div>
+        <h2><a class="article-title">{{ project.title }}</a></h2>
+        <p class="article-content">{{ project.description }}</p>
+        <a href="{{project.link}}" class="btn btn-dark" role="button">Github Repo</a>
+        </div>
+    </article>
+</div>
+{%endblock %}

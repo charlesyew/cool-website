@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class = "nav-box my-2" style="background-color: transparent;" >
+        <nav class="navbar navbar-expand-lg navbar-light" >
+            <div class = "container">
+                <div class="collapse navbar-collapse order-1 order-md-0 dual-collapse2">
+                    <ul class="navbar-nav mr-auto my-2">
+                        <!-- Tag Filter-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Categories
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="{{url_for('projects')}}">Quant Finance</a>
+                                <a class="dropdown-item" href="{{url_for('projects')}}">Mathematics</a>
+                                <a class="dropdown-item" href="{{url_for('projects')}}">Miscellaneous</a>
+                            </div>
+                        </li>
+                        <!-- Sort By-->
+                        <li class="nav-item">
+                            <a class="nav-link">Sort By: </a>
+                        </li>
+                        <!-- Sort By Date-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Date</a>
+                        </li>
+                        <!-- Sort By Popularity-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Popularity</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse order-3 dual-collapse2">
+                    <ul class="navbar-nav ml-auto my-2">
+                        <!-- Search Bar -->
+                        <li class="nav-item">
+                            <form class="form-inline my-2">
+                                <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-dark btn-sm mx-2" type="submit">Search</button>
+                            </form>
+                        </li>
+                        <!-- Last Updated-->
+                        <li class="nav-item">
+                            <div class="container-fluid text-center" >
+                                <h5 class="card-title" style="line-height:0.8;" >{{last_commit.day_since_posted}} </h5>
+                                <p class="card-text text-muted" style="color: white;line-height:0.8;">days since last updated</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class = 'project-box my-2'>  
+        <div class="row row-cols-1 row-cols-md-2">
+            {% for project in projects %}
+                <div class="col-lg-6 my-2 py-2">
+                    <div class="card text-center w-100 h-100"> 
+                                <div class="card-header">
+                                    Project #{{project.index}}
+                                </div>
+                                <img class="card-img" src="{{ url_for('static', filename='Images/') }}{{project.thumbnail}}" alt="Card image">
+                                <div class="card-img-overlay"> 
+                                    <div class="card-body"  data-toggle="tooltip" data-placement="top" title="{{project.alt}}">
+                                        <h5 class="card-title"> {{ project.title }} in {{ project.language }}</h5>
+                                        <p class="card-text text-muted"> {{ project.description}} </p>
+                                        <p class="card-text"> {{ project.comment}} </p>
+                                        <a href="{{project.link}}" target="_blank" rel="noopener noreferrer" class="btn btn-dark ">Github Link</a> <br /><br />
+                                        {% for tag in project.tags %}
+                                            <span class="badge badge-pill badge-dark" style="background-color:#392d50" > {{tag}} </span>
+                                        {% endfor %}    
+                                    </div>
+                                </div>
+
+                                <div class="card-footer text-muted">
+                                     {{project.day_since_posted}} weeks(s) ago
+                                </div>
+                                                    
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>  
+    
+
+    <!-- Pagination -->
+    <div class = 'pagination-box my-3'>
+        <nav aria-label="Page navigation example justify-content-center">
+            <ul class="pagination ">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+{%endblock %}

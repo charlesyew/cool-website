@@ -1,0 +1,150 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class = 'faq-box'> 
+        <article class="mx-auto bg-white p-5 my-5 shadow-lg text-justify">
+            <h1> FAQ</h1>
+            <b>Where were you from? Why did you choose to study abroad? </b>
+            <p>I was from Penang, a tiny island in Malaysia famous for its street food. When I grew up, I never thought of leaving my hometown. In fact, 
+                I didn't even know what Singapore and the United States was like until I was about nine or ten years old (though I did memorize the location 
+                of the countries on the world map when I was five). I was fortunate enough to meet a group of friends who share the same interest in math,
+                and together we participated in primary school math olympiad competitions. The questions felt more like math puzzle than theory back then 
+                so it was mostly just us having fun as kids. We did well enough to qualify for the invitational round of a regional competition, 
+                received a scholarship from Hwa Chong after the competition, and the rest is history. </p>
+
+            <b>Why did you decide to study quant finance?</b>
+            <p>Looking at my CV, it should be quite apparent that quant finance wasn't really always at the top of my radar. In fact, when I chose my undergraduate degree, I wanted
+                to be an investment banker. I saw the prestige that the profession brings, and convinced myself that I'd be a good fit. However, in university, I started gaining
+                exposure to other career paths, and saw different possibilities for myself. After trying out a few of those, I realized that while I was decent in those fields, I was never the best. 
+                That was when I made up my mind that I should try to build my career around my passion for applied math. After all, if everything goes south, at least I can still teach math for a living.
+                I crafted a 10 year career roadmap, which led me to where I am now, with 8 1/2 years more to go. <br>
+                (Also, all of my family members are engineers, so perhaps this is the closest I can get to become an engineer.) </p>
+
+            <b>Which books do you recommend for quant finance?</b>
+            <p> I am perhaps not the most qualified person out there to give book recommendations, 
+                but here are some of the nicer books that I read to get myself up to speed with the technicalities in the quant field: <br>
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-dark collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background-color:transparent;border-color: transparent;">
+                                Probability & Statistics
+                                </button>
+                            </h5>
+                        </div>
+                  
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>
+                                        <i>A First Course in Probability</i> by Sheldon Ross 
+                                        <a href="http://julio.staff.ipb.ac.id/files/2015/02/Ross_8th_ed_English.pdf" target="_blank" rel="noopener noreferrer" class="badge badge-dark" style="background-color:#392d50"> Completed </a> 
+                                    </li>
+                                    <li>
+                                        <i>Econometrics</i> by Bruce Hansen 
+                                        <a href="https://www.ssc.wisc.edu/~bhansen/econometrics/" target="_blank" rel="noopener noreferrer" class="badge badge-dark" style="background-color:#392d50"> Completed </a> 
+                                    </li>
+                                    <li>
+                                        <i>Forecasting: Principles and Practice</i> by Rob Hyndman and George Athanasopoulos
+                                        <a href="https://otexts.com/fpp2/" target="_blank" rel="noopener noreferrer" class="badge badge-dark" style="background-color:#392d50"> Completed </a> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                            <button class="btn btn-dark collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color:transparent;border-color: transparent;">
+                                Mathematics
+                            </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li> 
+                                        <i>Introduction to Linear Algebra</i> by Gilbert Strang 
+                                        <a href="http://math.mit.edu/~gs/linearalgebra/ " target="_blank" rel="noopener noreferrer" class="badge badge-dark" style="background-color:#392d50"> Completed </a> 
+                                    </li>
+                                    <li> 
+                                        <i>A Primer for the Mathematics of Financial Engineering</i> by Dan Stefanica 
+                                        <a href="https://www.amazon.com/Mathematics-Financial-Engineering-Advanced-Background/dp/0979757622" target="_blank" rel="noopener noreferrer" class="badge badge-dark" style="background-color: #392d50;"> Completed </a>
+                                    </li>
+                                    <li> 
+                                        <i>Understanding Analysis</i> by Stephen Abbott 
+                                        <a href="https://www.amazon.com/Understanding-Analysis-Undergraduate-Texts-Mathematics/dp/1493927116/ref=sr_1_1?dchild=1&keywords=Understanding+Analysis&qid=1625216947&s=books&sr=1-1" target="_blank" rel="noopener noreferrer" class="badge badge-dark" style="background-color: #876fb4;"> Reading </a> 
+                                    </li>
+                                    <li> 
+                                        <i>Monte Carlo Methods in Financial Engineering</i> by Paul Glasserman 
+                                        <a href="https://www.amazon.com/Financial-Engineering-Stochastic-Modelling-Probability/dp/0387004513/ref=sr_1_1?dchild=1&keywords=Monte+Carlo+Methods+in+Financial+Engineering&qid=1625216973&s=books&sr=1-1" target="_blank" rel="noopener noreferrer" class="badge badge-dark" style="background-color: #876fb4;"> Reading </a> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                            <button class="btn btn-dark collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color:transparent;border-color: transparent;">
+                                Economics & Finance
+                            </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>
+                                        <i>Microeconomic Theory</i> by Mas-Colell, Whinston & Green 
+                                        <a href="https://www.amazon.com/Microeconomic-Theory-Andreu-Mas-Colell/dp/0195073401" target="_blank" rel="noopener noreferrer" class="badge badge-dark" style="background-color:#392d50"> Completed </a> 
+                                    </li>
+                                    <li>
+                                        <i>Advanced Macroeconomics</i> by David Romer 
+                                        <a href="https://new.mmf.lnu.edu.ua/wp-content/uploads/2018/03/Romer_adv-macroec.pdf" target="_blank" rel="noopener noreferrer" class="badge badge-dark" style="background-color:#392d50"> Completed </a> 
+                                    </li>
+                                    <li>
+                                        <i>Options, Futures & Other Derivatives</i> by John Hull 
+                                        <a href="https://www.amazon.com/Options-Futures-Other-Derivatives-9th/dp/0133456315" target="_blank" rel="noopener noreferrer" class="badge badge-dark" style="background-color:#392d50"> Completed </a> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0">
+                            <button class="btn btn-dark collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="background-color:transparent;border-color: transparent;">
+                                Programming
+                            </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>
+                                        <i>Accelerated C++</i> by Andrew Koenig & Barbara Moo 
+                                        <a href="https://www.amazon.com/Accelerated-C-Practical-Programming-Example/dp/020170353X/ref=sr_1_1?dchild=1&keywords=Accelerated+C%2B%2B&qid=1625217103&s=books&sr=1-1" target="_blank" rel="noopener noreferrer" class="badge badge-dark" style="background-color: #876fb4;"> Reading </a> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </p>
+            <b>Why do you like to study stochastic models? </b>
+            <p> I have always liked understanding random occurances. I am someone who likes pattern a lot, so when I see randomness in game environments and real world systems, 
+                I feel compelled to dig into that whole mess and find out if there are indeed underlying mechanisms that govern such enigmatic patterns. It feels kind of like magic 
+                doesn't it? :)
+            </p>
+            <b>What do you like to do besides studying?</b>
+            <p> I like to read for fun as well! So exciting I know. My favorite books are the Murakami ones, like 1Q84 & Kafka on the Shore. I like strategy games a lot too, so 
+                games like chess, poker & bridge are my go-to when I have spare time. I used to play badminton on an inter-school level, 
+                but now I am probably only fit for amateur games...
+            </p>
+        </article>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class = "article-box shadow-lg my-5">
+    <article class="media content-section">
+        <div class="media-body">
+            <div class="article-metadata">
+            <a class="mr-2" >{{ post.author }}</a>
+            <small class="text-muted">{{ post.date_posted }}</small>
+            </div>
+        <h6><a class="text-muted">{{ post.duration }}</a></h6>
+        <h2><a class="article-title">{{ post.title }}</a></h2>
+        <p>{{ post.html|safe }}<p></p>
+        </div>
+    </article>
+</div>
+
+
+
+<!-- <div class = "preview-box my-1">
+    <div class = "row">
+
+        {% if post_prev %}
+        <div class = "col col-lg-6">
+            <div class="card text-center w-100">
+                <div class="card-header">
+                    Post #{{post_prev.index}} 
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"> {{ post_prev.title }} </h5>
+                    <p class="card-text"> {{ post_prev.content_short}} </p>
+                    <a href="{{url_for('article', post_id = post_prev.index )}}" class="btn btn-dark stretched-link">Read More</a> <br /><br />
+                    {% for tag in post_prev.tags %}
+                        <span class="badge badge-pill badge-info"> {{tag}} </span>
+                    {% endfor %}
+                </div>
+                <div class="card-footer text-muted">
+                    {{post_prev.day_since_posted}} day(s) ago
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class = "col col-lg-6"></div>
+        {% endif %}
+
+        {% if post_next %}
+        <div class = "col col-lg-6">
+            <div class="card text-center w-100">
+                <div class="card-header">
+                    Post #{{post_next.index}} 
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"> {{ post_next.title }} </h5>
+                    <p class="card-text"> {{ post_next.content_short}} </p>
+                    <a href="{{url_for('article', post_id = post_next.index )}}" class="btn btn-dark stretched-link">Read More</a> <br /><br />
+                    {% for tag in post_next.tags %}
+                        <span class="badge badge-pill badge-info"> {{tag}} </span>
+                    {% endfor %}
+                </div>
+                <div class="card-footer text-muted">
+                    {{post_next.day_since_posted}} day(s) ago
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class = "col col-lg-6"></div>
+        {% endif %}
+
+    </div>
+</div> -->
+
+
+<!-- <div class = 'container-fluid'>
+    <p>
+        <a class="btn btn-primary justify-content-center" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Link with href
+        </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+    </div>
+</div> -->
+
+{% endblock %}
